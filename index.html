@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id='title'>Institute Survey Form</h1> 
+  <p id = 'description'>Please fill the form sincerely.</p>
+  <form id = 'survey-form'>
+    <fieldset>
+      <label id ='name-label' for = 'name'>Name
+        <input id='name' type= 'text' placeholder='Write Your Name' required/>
+      </label>
+    
+      <label id ='email-label' for = 'email'>Email
+        <input id='email' type= 'email' placeholder='Write Your Email' required/>
+      </label>
+    
+      <label id ='number-label' for = 'number'>Contact-Number
+        <input id='number' type= 'number'min="9000000000" max="9999999999" placeholder='Enter-Number'/>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <label for = 'dropdown'>
+        <select id = 'dropdown'>
+          <option>Select current identity</option>
+          <option> Student in our Institute</option>
+          <option> Faculty in our Institute</option>
+        </select>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      <legend>Do you want to stay notified for any update</legend>
+      <label for = 'yes'>
+        <input id = 'yes' type = 'radio' name ='action-type' class = 'inline' value="yes" checked/>Yes
+      </label>
+      <label for = 'no'>
+        <input id = 'no' type = 'radio' name ='action-type' class = 'inline' value="private" />No
+      </label>
+    </fieldset>
+
+    <fieldset>What activities you likes most (mark all that applies)<br> 
+      <label>
+        <input type="checkbox" name="preferences" value="sports" class='inline'>Sports
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="preferences" value="music" class='inline'>Music
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="preferences" value="reading" class='inline'>Reading
+      </label><br>
+
+      <label>
+        <input type="checkbox" name="preferences" value="traveling" class='inline'>Traveling
+      </label><br>
+    </fieldset>
+
+    <fieldset>
+      <label for="bio">Provide a bio:
+          <textarea id="bio" name="bio" rows="3" cols="30" placeholder="I am a second year Computer-Science student."></textarea>
+      </label>
+    </fieldset>
+
+      <input id='submit' type="submit" value="Submit" />
+  </form>
+</body>
+</html>
